@@ -1,0 +1,125 @@
+/* app css stylesheet */
+
+html,
+body {
+    height: 100%;
+}
+
+#menu {
+    background-color: #252932;
+}
+
+#content {
+    background-color: #F0F0F0;
+    min-height: 100%;
+}
+
+/* Nav */
+.menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.menu .menu-item {
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.menu .menu-item:hover {
+    background-color: #383C46;
+}
+
+.menu .menu-item:active,
+.menu .menu-item:focus {
+    background-color: #3EB3C5;
+}
+
+/* Header */
+.main-header {
+    background-color: #3EB3C5;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.main-header .logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Module */
+.module {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.module-header {
+    padding: 50px 40px 20px;
+}
+
+.module-heading {
+    margin: 0;
+}
+
+.module-content {
+    padding: 20px 40px 50px;
+}
+
+.module-footer {
+
+}
+
+/* Bootstrap Overrides */
+.btn-primary {
+    background-color: #3EB3C5;
+    border-color: #3EB3C5;
+}
+
+.btn-primary:hover {
+    background-color: #39A7B2;
+    border-color: #39A7B2;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    background-color: #3396A0;
+    border-color: #3396A0;
+}
+
+/* Slideout Vendor Menu Plugin */
+.slideout-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position:relative;
+    z-index: 1;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
